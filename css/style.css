@@ -29,3 +29,13 @@ body {
 #next-button {
   color: red
 }
+
+.right {
+    background-color: green;
+    color: white;
+}
+
+.wrong {
+    background-color: red;
+    color: white;
+}

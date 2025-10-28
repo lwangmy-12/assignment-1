@@ -40,7 +40,7 @@ function loadQuestion() {
     button.classList.remove("correct", "wrong");
   });
 
-  nextButton.style.display = "none";
+  nextButton.style.display = "block";
 }
 
 function selectAnswer(selectedIndex) {
@@ -77,3 +77,10 @@ function showScore() {
 }
 
 loadQuestion();
+
+
+optionsElements.forEach((button, index) => {
+  button.addEventListener("click", () => selectAnswer(index));
+});
+
+nextButton.addEventListener("click", nextQuestion);
